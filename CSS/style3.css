@@ -1,10 +1,10 @@
-div {
+/*div {
     line-height: 150px;
 }
 
 #containter {
-    top: 25px;
-    left: 25px;
+    top: 100px;
+    left: 125px;
     position: absolute;
 }
 
@@ -20,26 +20,28 @@ div {
     border-radius: 20px;
     color: white;
     text-align: center;
-    background-color: black;
+    background-color: rgb(12, 29, 128);
     position: absolute;
 }
 
 .transformed {
-    background-color: tomato;
+    background-color: rgb(69, 153, 209);
     opacity: 0.8;
 }
 
-/*#transformed-1 {
+#transformed-1 {
     transform: rotate(45deg);
+    transform-origin: top left;
 }
 
 #transformed-2 {
-    transform: rotate(1.2rad);
+    transform: rotate(45deg);
+    transform-origin: bottom-left;
 }
 
 #transformed-3 {
     transform: rotate(0.25turn);
-}*/
+}
 
 #transformed-4 {
     transform: perspective(500px) rotateY(40deg);
@@ -51,4 +53,31 @@ div {
 
 #transformed-6 {
     transform: perspective(500px) rotateY(80deg);
+}
+*/
+
+
+div {
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    border-radius: 20px;
+    position: absolute;
+    color: white;
+    background-color: tomato;
+    text-align: center;
+    top: 100px;
+    left: 100px;
+    animation: pulsiraj 1s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes pulsiraj {
+    0% {
+        transform: scale(0.75);
+    }
+
+    100% {
+        transform: scale(1.5)
+    }
 }
