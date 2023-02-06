@@ -1,7 +1,8 @@
 body{
-    font-family: Arial;
+    font-family: monospace;
     margin: 15px;
     text-align: center;
+    color: white;
 }
 
 .wrap{
@@ -23,15 +24,15 @@ div:hover{
 }
 
 .one, .four, .seven, .ten {
-    background: tomato;
+    background: rgb(0, 22, 119);
 }
 
 .two, .five, .eight, .eleven {
-    background: skyblue;
+    background: rgb(84, 106, 114);
 }
 
 .three, .six, .nine {
-    background: gold;
+    background: rgb(18, 78, 156);
 }
 
 .one:hover{
